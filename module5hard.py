@@ -68,7 +68,6 @@ class UrTube:
                         print("Конец видео")
 
 
-
 class Video:
     video_list = []
 
@@ -80,13 +79,6 @@ class Video:
         self.video_list.append(self)
 
 
-"""
-    def __new__(cls, *args, **kwargs):
-        cls.video_list.append(object.__new__(cls))
-        return object.__new__(cls)
-"""
-
-
 class User:
     user_list = []
 
@@ -95,7 +87,6 @@ class User:
         self.password = hash(password)
         self.age = age
         self.user_list.append(self)
-
 
 
 ur = UrTube()
