@@ -76,7 +76,7 @@ class Video:
         self.duration = duration
         self.time_now = time_now
         self.adult_mode = adult_mode
-        self.video_list.append(self)
+        Video.video_list.append(self)
 
 
 class User:
@@ -86,7 +86,7 @@ class User:
         self.nickname = nickname
         self.password = hash(password)
         self.age = age
-        self.user_list.append(self)
+        User.user_list.append(self)
 
 
 ur = UrTube()
